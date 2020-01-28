@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="15dp">
+
+<android.support.v4.widget.NestedScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:id="@+id/scrollhelp">
+
+<LinearLayout
+    android:id="@+id/layouthelp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/closeDialogHelp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_close_black"
+        android:layout_marginTop="7dp"
+        android:layout_marginRight="7dp"
+        android:elevation="5dp"
+        android:layout_gravity="right"/>
+
+        <TextView
+            android:id="@+id/txthelp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="View Help"
+            android:textSize="20dp"
+            android:fontFamily="@font/poppinssemibold"
+            android:layout_margin="5dp"
+            android:textColor="#000"
+            android:layout_gravity="center" />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginBottom="10dp">
+    <!-- help 1 -->
+
+    <TextView
+        android:id="@+id/content_text1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffcc00"
+        android:clickable="true"
+        android:onClick="toggle_contents"
+        android:padding="10dp"
+        android:text="Registration of Account"
+        android:fontFamily="@font/poppinsmedium"
+        android:textColor="@android:color/black" />
+
+    <!--content to hide/show -->
+    <TextView
+        android:id="@+id/title_text1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:background="#F3D875"
+        android:padding="10dp"
+        android:text="@string/registeraccount"
+        android:textColor="@android:color/black"
+        android:fontFamily="@font/poppinsregular"
+        />
+
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginBottom="10dp">
+
+    <!-- help 2 -->
+    <TextView
+        android:id="@+id/content_text2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffcc00"
+        android:clickable="true"
+        android:onClick="toggle_contents"
+        android:padding="10dp"
+        android:text="Viewing the Events"
+        android:fontFamily="@font/poppinsmedium"
+        android:textColor="@android:color/black" />
+
+    <!--content to hide/show -->
+    <TextView
+        android:id="@+id/title_text2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F3D875"
+        android:padding="10dp"
+        android:text="@string/view_events"
+        android:textColor="@android:color/black"
+        android:fontFamily="@font/poppinsregular"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginBottom="10dp">
+
+    <!-- help 3 -->
+    <TextView
+        android:id="@+id/content_text3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffcc00"
+        android:clickable="true"
+        android:onClick="toggle_contents"
+        android:padding="10dp"
+        android:text="Viewing the Portfolio"
+        android:fontFamily="@font/poppinsmedium"
+        android:textColor="@android:color/black" />
+
+    <!--content to hide/show -->
+    <TextView
+        android:id="@+id/title_text3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F3D875"
+        android:padding="10dp"
+        android:text="@string/view_portfolio"
+        android:textColor="@android:color/black"
+        android:fontFamily="@font/poppinsregular"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginBottom="10dp">
+
+    <!-- help 4 -->
+    <TextView
+        android:id="@+id/content_text4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffcc00"
+        android:clickable="true"
+        android:onClick="toggle_contents"
+        android:padding="10dp"
+        android:text="Scanning the QR code"
+        android:fontFamily="@font/poppinsmedium"
+        android:textColor="@android:color/black" />
+
+    <!--content to hide/show -->
+    <TextView
+        android:id="@+id/title_text4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F3D875"
+        android:padding="10dp"
+        android:text="@string/view_scanqr"
+        android:textColor="@android:color/black"
+        android:fontFamily="@font/poppinsregular"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginBottom="10dp">
+
+    <!-- help 5 -->
+    <TextView
+        android:id="@+id/content_text5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffcc00"
+        android:clickable="true"
+        android:onClick="toggle_contents"
+        android:padding="10dp"
+        android:text="Viewing the Help"
+        android:fontFamily="@font/poppinsmedium"
+        android:textColor="@android:color/black" />
+
+    <!--content to hide/show -->
+    <TextView
+        android:id="@+id/title_text5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F3D875"
+        android:padding="10dp"
+        android:text="@string/view_help"
+        android:textColor="@android:color/black"
+        android:fontFamily="@font/poppinsregular"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginBottom="10dp">
+    <!-- help 6 -->
+    <TextView
+        android:id="@+id/content_text6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffcc00"
+        android:clickable="true"
+        android:onClick="toggle_contents"
+        android:padding="10dp"
+        android:text="Changing the login credentials"
+        android:fontFamily="@font/poppinsmedium"
+        android:textColor="@android:color/black" />
+
+    <!--content to hide/show -->
+    <TextView
+        android:id="@+id/title_text6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F3D875"
+        android:padding="10dp"
+        android:text="@string/change_login_credentials"
+        android:textColor="@android:color/black"
+        android:fontFamily="@font/poppinsregular"/>
+
+    </LinearLayout>
+
+</LinearLayout>
+
+</android.support.v4.widget.NestedScrollView>
+
+</android.support.v7.widget.CardView>

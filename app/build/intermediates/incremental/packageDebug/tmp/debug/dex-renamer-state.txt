@@ -1,0 +1,4 @@
+#Tue Jan 28 17:18:44 PHT 2020
+base.0=/Volumes/Char/Documents/Android/AndroidStudioProjects/MobileAppThomasianJourney/app/build/intermediates/dex/debug/mergeDexDebug/out/classes.dex
+path.0=classes.dex
+renamed.0=classes.dex

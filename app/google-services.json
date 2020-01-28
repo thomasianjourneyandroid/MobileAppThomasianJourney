@@ -1,0 +1,56 @@
+{
+  "project_info": {
+    "project_number": "532423003716",
+    "firebase_url": "https://mobileappthomasianjourne-7acb4.firebaseio.com",
+    "project_id": "mobileappthomasianjourne-7acb4",
+    "storage_bucket": "mobileappthomasianjourne-7acb4.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:532423003716:android:0189c11b62e960117ff611",
+        "android_client_info": {
+          "package_name": "mobile.thomasianJourney.main"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "532423003716-50hegjrer245ok6a1has1seivic3k3u2.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "mobile.thomasianJourney.main",
+            "certificate_hash": "cfe857e1928fb9ed9ef17718e9b450a5399cf7ff"
+          }
+        },
+        {
+          "client_id": "532423003716-dcp5iq1g0i6ltej4tfcdss5t47s70bu0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "mobile.thomasianJourney.main",
+            "certificate_hash": "01d5033c49818c41a8404097ab6f143d7ccec3e7"
+          }
+        },
+        {
+          "client_id": "532423003716-vsmodrhhcsncssb9l61l3k3hvmp2vod3.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCKOfP7RcbaCQHFjLU-gCrD8hOrp4Skz6M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "532423003716-vsmodrhhcsncssb9l61l3k3hvmp2vod3.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

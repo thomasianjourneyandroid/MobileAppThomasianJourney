@@ -1,0 +1,414 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="mobile.thomasianJourney.main"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="16"
+8-->/Volumes/Char/Documents/Android/AndroidStudioProjects/MobileAppThomasianJourney/app/src/main/AndroidManifest.xml
+9        android:targetSdkVersion="28" />
+9-->/Volumes/Char/Documents/Android/AndroidStudioProjects/MobileAppThomasianJourney/app/src/main/AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+11-->/Volumes/Char/Documents/Android/AndroidStudioProjects/MobileAppThomasianJourney/app/src/main/AndroidManifest.xml:5:5-79
+11-->/Volumes/Char/Documents/Android/AndroidStudioProjects/MobileAppThomasianJourney/app/src/main/AndroidManifest.xml:5:22-76
+12    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+12-->/Volumes/Char/Documents/Android/AndroidStudioProjects/MobileAppThomasianJourney/app/src/main/AndroidManifest.xml:6:5-81
+12-->/Volumes/Char/Documents/Android/AndroidStudioProjects/MobileAppThomasianJourney/app/src/main/AndroidManifest.xml:6:22-78
+13    <uses-permission android:name="android.permission.CAMERA" /> <!-- Don't require camera, as this requires a rear camera. This allows it to work on the Nexus 7 -->
+13-->/Volumes/Char/Documents/Android/AndroidStudioProjects/MobileAppThomasianJourney/app/src/main/AndroidManifest.xml:7:5-65
+13-->/Volumes/Char/Documents/Android/AndroidStudioProjects/MobileAppThomasianJourney/app/src/main/AndroidManifest.xml:7:22-62
+14    <uses-feature
+14-->/Volumes/Char/Documents/Android/AndroidStudioProjects/MobileAppThomasianJourney/app/src/main/AndroidManifest.xml:8:5-10:36
+15        android:name="android.hardware.camera"
+15-->/Volumes/Char/Documents/Android/AndroidStudioProjects/MobileAppThomasianJourney/app/src/main/AndroidManifest.xml:9:9-47
+16        android:required="false" />
+16-->/Volumes/Char/Documents/Android/AndroidStudioProjects/MobileAppThomasianJourney/app/src/main/AndroidManifest.xml:10:9-33
+17    <uses-feature
+17-->/Volumes/Char/Documents/Android/AndroidStudioProjects/MobileAppThomasianJourney/app/src/main/AndroidManifest.xml:11:5-13:36
+18        android:name="android.hardware.camera.front"
+18-->/Volumes/Char/Documents/Android/AndroidStudioProjects/MobileAppThomasianJourney/app/src/main/AndroidManifest.xml:12:9-53
+19        android:required="false" /> <!-- TODO replace above two with next line after Android 4.2 -->
+19-->/Volumes/Char/Documents/Android/AndroidStudioProjects/MobileAppThomasianJourney/app/src/main/AndroidManifest.xml:13:9-33
+20    <!-- <uses-feature android:name="android.hardware.camera.any"/> -->
+21    <uses-feature
+21-->/Volumes/Char/Documents/Android/AndroidStudioProjects/MobileAppThomasianJourney/app/src/main/AndroidManifest.xml:15:5-17:36
+22        android:name="android.hardware.camera.autofocus"
+22-->/Volumes/Char/Documents/Android/AndroidStudioProjects/MobileAppThomasianJourney/app/src/main/AndroidManifest.xml:16:9-57
+23        android:required="false" />
+23-->/Volumes/Char/Documents/Android/AndroidStudioProjects/MobileAppThomasianJourney/app/src/main/AndroidManifest.xml:17:9-33
+24    <uses-feature
+24-->/Volumes/Char/Documents/Android/AndroidStudioProjects/MobileAppThomasianJourney/app/src/main/AndroidManifest.xml:18:5-20:36
+25        android:name="android.hardware.camera.flash"
+25-->/Volumes/Char/Documents/Android/AndroidStudioProjects/MobileAppThomasianJourney/app/src/main/AndroidManifest.xml:19:9-53
+26        android:required="false" />
+26-->/Volumes/Char/Documents/Android/AndroidStudioProjects/MobileAppThomasianJourney/app/src/main/AndroidManifest.xml:20:9-33
+27    <uses-feature
+27-->/Volumes/Char/Documents/Android/AndroidStudioProjects/MobileAppThomasianJourney/app/src/main/AndroidManifest.xml:21:5-23:36
+28        android:name="android.hardware.screen.landscape"
+28-->/Volumes/Char/Documents/Android/AndroidStudioProjects/MobileAppThomasianJourney/app/src/main/AndroidManifest.xml:22:9-57
+29        android:required="false" />
+29-->/Volumes/Char/Documents/Android/AndroidStudioProjects/MobileAppThomasianJourney/app/src/main/AndroidManifest.xml:23:9-33
+30    <uses-feature
+30-->/Volumes/Char/Documents/Android/AndroidStudioProjects/MobileAppThomasianJourney/app/src/main/AndroidManifest.xml:24:5-26:36
+31        android:name="android.hardware.wifi"
+31-->/Volumes/Char/Documents/Android/AndroidStudioProjects/MobileAppThomasianJourney/app/src/main/AndroidManifest.xml:25:9-45
+32        android:required="false" />
+32-->/Volumes/Char/Documents/Android/AndroidStudioProjects/MobileAppThomasianJourney/app/src/main/AndroidManifest.xml:26:9-33
+33
+34    <uses-permission android:name="android.permission.INTERNET" />
+34-->/Volumes/Char/Documents/Android/AndroidStudioProjects/MobileAppThomasianJourney/app/src/main/AndroidManifest.xml:28:5-67
+34-->/Volumes/Char/Documents/Android/AndroidStudioProjects/MobileAppThomasianJourney/app/src/main/AndroidManifest.xml:28:22-64
+35    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+35-->[com.google.firebase:firebase-iid:17.0.4] /Volumes/Char/Documents/.gradle/caches/transforms-2/files-2.1/0b5181561b042d70bd62a360fda3943c/firebase-iid-17.0.4/AndroidManifest.xml:22:5-79
+35-->[com.google.firebase:firebase-iid:17.0.4] /Volumes/Char/Documents/.gradle/caches/transforms-2/files-2.1/0b5181561b042d70bd62a360fda3943c/firebase-iid-17.0.4/AndroidManifest.xml:22:22-76
+36    <uses-permission android:name="android.permission.WAKE_LOCK" /> <!-- Required by older versions of Google Play services to create IID tokens -->
+36-->[com.google.firebase:firebase-iid:17.0.4] /Volumes/Char/Documents/.gradle/caches/transforms-2/files-2.1/0b5181561b042d70bd62a360fda3943c/firebase-iid-17.0.4/AndroidManifest.xml:24:5-68
+36-->[com.google.firebase:firebase-iid:17.0.4] /Volumes/Char/Documents/.gradle/caches/transforms-2/files-2.1/0b5181561b042d70bd62a360fda3943c/firebase-iid-17.0.4/AndroidManifest.xml:24:22-65
+37    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+37-->[com.google.firebase:firebase-iid:17.0.4] /Volumes/Char/Documents/.gradle/caches/transforms-2/files-2.1/0b5181561b042d70bd62a360fda3943c/firebase-iid-17.0.4/AndroidManifest.xml:26:5-82
+37-->[com.google.firebase:firebase-iid:17.0.4] /Volumes/Char/Documents/.gradle/caches/transforms-2/files-2.1/0b5181561b042d70bd62a360fda3943c/firebase-iid-17.0.4/AndroidManifest.xml:26:22-79
+38
+39    <application
+39-->/Volumes/Char/Documents/Android/AndroidStudioProjects/MobileAppThomasianJourney/app/src/main/AndroidManifest.xml:30:5-144:19
+40        android:allowBackup="true"
+40-->/Volumes/Char/Documents/Android/AndroidStudioProjects/MobileAppThomasianJourney/app/src/main/AndroidManifest.xml:31:9-35
+41        android:appComponentFactory="android.support.v4.app.CoreComponentFactory"
+41-->[com.android.support:support-compat:28.0.0] /Volumes/Char/Documents/.gradle/caches/transforms-2/files-2.1/e80327cc5b6d14150f74585b4aa35cdb/support-compat-28.0.0/AndroidManifest.xml:22:18-91
+42        android:debuggable="true"
+43        android:icon="@drawable/tjlogo"
+43-->/Volumes/Char/Documents/Android/AndroidStudioProjects/MobileAppThomasianJourney/app/src/main/AndroidManifest.xml:32:9-40
+44        android:label="@string/app_name"
+44-->/Volumes/Char/Documents/Android/AndroidStudioProjects/MobileAppThomasianJourney/app/src/main/AndroidManifest.xml:33:9-41
+45        android:roundIcon="@drawable/tjlogo"
+45-->/Volumes/Char/Documents/Android/AndroidStudioProjects/MobileAppThomasianJourney/app/src/main/AndroidManifest.xml:34:9-45
+46        android:supportsRtl="true"
+46-->/Volumes/Char/Documents/Android/AndroidStudioProjects/MobileAppThomasianJourney/app/src/main/AndroidManifest.xml:35:9-35
+47        android:testOnly="true"
+48        android:theme="@style/AppTheme.NoActionBar" >
+48-->/Volumes/Char/Documents/Android/AndroidStudioProjects/MobileAppThomasianJourney/app/src/main/AndroidManifest.xml:36:9-52
+49        <activity
+49-->/Volumes/Char/Documents/Android/AndroidStudioProjects/MobileAppThomasianJourney/app/src/main/AndroidManifest.xml:37:9-40:80
+50            android:name="mobile.thomasianJourney.main.GPSActivity"
+50-->/Volumes/Char/Documents/Android/AndroidStudioProjects/MobileAppThomasianJourney/app/src/main/AndroidManifest.xml:38:13-68
+51            android:label="@string/title_activity_gps"
+51-->/Volumes/Char/Documents/Android/AndroidStudioProjects/MobileAppThomasianJourney/app/src/main/AndroidManifest.xml:39:13-55
+52            android:theme="@style/AppTheme.NoActionBar.NoActionBar" />
+52-->/Volumes/Char/Documents/Android/AndroidStudioProjects/MobileAppThomasianJourney/app/src/main/AndroidManifest.xml:40:13-68
+53        <activity
+53-->/Volumes/Char/Documents/Android/AndroidStudioProjects/MobileAppThomasianJourney/app/src/main/AndroidManifest.xml:41:9-46:47
+54            android:name="mobile.thomasianJourney.main.MenuPortfolio"
+54-->/Volumes/Char/Documents/Android/AndroidStudioProjects/MobileAppThomasianJourney/app/src/main/AndroidManifest.xml:42:13-70
+55            android:label="View Portfolio"
+55-->/Volumes/Char/Documents/Android/AndroidStudioProjects/MobileAppThomasianJourney/app/src/main/AndroidManifest.xml:43:13-43
+56            android:parentActivityName="mobile.thomasianJourney.main.SecondActivity"
+56-->/Volumes/Char/Documents/Android/AndroidStudioProjects/MobileAppThomasianJourney/app/src/main/AndroidManifest.xml:44:13-85
+57            android:screenOrientation="portrait"
+57-->/Volumes/Char/Documents/Android/AndroidStudioProjects/MobileAppThomasianJourney/app/src/main/AndroidManifest.xml:45:13-49
+58            android:theme="@style/AppTheme" />
+58-->/Volumes/Char/Documents/Android/AndroidStudioProjects/MobileAppThomasianJourney/app/src/main/AndroidManifest.xml:46:13-44
+59        <activity
+59-->/Volumes/Char/Documents/Android/AndroidStudioProjects/MobileAppThomasianJourney/app/src/main/AndroidManifest.xml:47:9-49:52
+60            android:name="mobile.thomasianJourney.main.register.RegisterFirstLoading"
+60-->/Volumes/Char/Documents/Android/AndroidStudioProjects/MobileAppThomasianJourney/app/src/main/AndroidManifest.xml:48:13-86
+61            android:screenOrientation="portrait" />
+61-->/Volumes/Char/Documents/Android/AndroidStudioProjects/MobileAppThomasianJourney/app/src/main/AndroidManifest.xml:49:13-49
+62        <activity
+62-->/Volumes/Char/Documents/Android/AndroidStudioProjects/MobileAppThomasianJourney/app/src/main/AndroidManifest.xml:50:9-60:20
+63            android:name="mobile.thomasianJourney.main.Splash"
+63-->/Volumes/Char/Documents/Android/AndroidStudioProjects/MobileAppThomasianJourney/app/src/main/AndroidManifest.xml:51:13-63
+64            android:label="@string/app_name"
+64-->/Volumes/Char/Documents/Android/AndroidStudioProjects/MobileAppThomasianJourney/app/src/main/AndroidManifest.xml:52:13-45
+65            android:screenOrientation="portrait"
+65-->/Volumes/Char/Documents/Android/AndroidStudioProjects/MobileAppThomasianJourney/app/src/main/AndroidManifest.xml:53:13-49
+66            android:theme="@style/Theme.AppCompat.Dark.NoActionBar.FullScreen" >
+66-->/Volumes/Char/Documents/Android/AndroidStudioProjects/MobileAppThomasianJourney/app/src/main/AndroidManifest.xml:54:13-79
+67            <intent-filter>
+67-->/Volumes/Char/Documents/Android/AndroidStudioProjects/MobileAppThomasianJourney/app/src/main/AndroidManifest.xml:55:13-59:29
+68                <action android:name="android.intent.action.MAIN" />
+68-->/Volumes/Char/Documents/Android/AndroidStudioProjects/MobileAppThomasianJourney/app/src/main/AndroidManifest.xml:56:17-69
+68-->/Volumes/Char/Documents/Android/AndroidStudioProjects/MobileAppThomasianJourney/app/src/main/AndroidManifest.xml:56:25-66
+69
+70                <category android:name="android.intent.category.LAUNCHER" />
+70-->/Volumes/Char/Documents/Android/AndroidStudioProjects/MobileAppThomasianJourney/app/src/main/AndroidManifest.xml:58:17-77
+70-->/Volumes/Char/Documents/Android/AndroidStudioProjects/MobileAppThomasianJourney/app/src/main/AndroidManifest.xml:58:27-74
+71            </intent-filter>
+72        </activity>
+73        <activity
+73-->/Volumes/Char/Documents/Android/AndroidStudioProjects/MobileAppThomasianJourney/app/src/main/AndroidManifest.xml:61:9-66:47
+74            android:name="mobile.thomasianJourney.main.MainActivity"
+74-->/Volumes/Char/Documents/Android/AndroidStudioProjects/MobileAppThomasianJourney/app/src/main/AndroidManifest.xml:62:13-69
+75            android:label="View Events"
+75-->/Volumes/Char/Documents/Android/AndroidStudioProjects/MobileAppThomasianJourney/app/src/main/AndroidManifest.xml:63:13-40
+76            android:parentActivityName="mobile.thomasianJourney.main.SecondActivity"
+76-->/Volumes/Char/Documents/Android/AndroidStudioProjects/MobileAppThomasianJourney/app/src/main/AndroidManifest.xml:64:13-85
+77            android:screenOrientation="portrait"
+77-->/Volumes/Char/Documents/Android/AndroidStudioProjects/MobileAppThomasianJourney/app/src/main/AndroidManifest.xml:65:13-49
+78            android:theme="@style/AppTheme" />
+78-->/Volumes/Char/Documents/Android/AndroidStudioProjects/MobileAppThomasianJourney/app/src/main/AndroidManifest.xml:66:13-44
+79        <activity
+79-->/Volumes/Char/Documents/Android/AndroidStudioProjects/MobileAppThomasianJourney/app/src/main/AndroidManifest.xml:67:9-70:82
+80            android:name="mobile.thomasianJourney.main.SecondActivity"
+80-->/Volumes/Char/Documents/Android/AndroidStudioProjects/MobileAppThomasianJourney/app/src/main/AndroidManifest.xml:68:13-71
+81            android:screenOrientation="portrait"
+81-->/Volumes/Char/Documents/Android/AndroidStudioProjects/MobileAppThomasianJourney/app/src/main/AndroidManifest.xml:69:13-49
+82            android:theme="@style/Theme.AppCompat.Dark.NoActionBar.FullScreen" />
+82-->/Volumes/Char/Documents/Android/AndroidStudioProjects/MobileAppThomasianJourney/app/src/main/AndroidManifest.xml:70:13-79
+83        <activity
+83-->/Volumes/Char/Documents/Android/AndroidStudioProjects/MobileAppThomasianJourney/app/src/main/AndroidManifest.xml:71:9-74:82
+84            android:name="mobile.thomasianJourney.main.register.RegisterFirst"
+84-->/Volumes/Char/Documents/Android/AndroidStudioProjects/MobileAppThomasianJourney/app/src/main/AndroidManifest.xml:72:13-79
+85            android:screenOrientation="portrait"
+85-->/Volumes/Char/Documents/Android/AndroidStudioProjects/MobileAppThomasianJourney/app/src/main/AndroidManifest.xml:73:13-49
+86            android:theme="@style/Theme.AppCompat.Dark.NoActionBar.FullScreen" />
+86-->/Volumes/Char/Documents/Android/AndroidStudioProjects/MobileAppThomasianJourney/app/src/main/AndroidManifest.xml:74:13-79
+87        <activity
+87-->/Volumes/Char/Documents/Android/AndroidStudioProjects/MobileAppThomasianJourney/app/src/main/AndroidManifest.xml:75:9-78:82
+88            android:name="mobile.thomasianJourney.main.register.RegisterSecond"
+88-->/Volumes/Char/Documents/Android/AndroidStudioProjects/MobileAppThomasianJourney/app/src/main/AndroidManifest.xml:76:13-80
+89            android:screenOrientation="portrait"
+89-->/Volumes/Char/Documents/Android/AndroidStudioProjects/MobileAppThomasianJourney/app/src/main/AndroidManifest.xml:77:13-49
+90            android:theme="@style/Theme.AppCompat.Dark.NoActionBar.FullScreen" />
+90-->/Volumes/Char/Documents/Android/AndroidStudioProjects/MobileAppThomasianJourney/app/src/main/AndroidManifest.xml:78:13-79
+91        <activity
+91-->/Volumes/Char/Documents/Android/AndroidStudioProjects/MobileAppThomasianJourney/app/src/main/AndroidManifest.xml:79:9-82:82
+92            android:name="mobile.thomasianJourney.main.register.RegisterSecondLoading"
+92-->/Volumes/Char/Documents/Android/AndroidStudioProjects/MobileAppThomasianJourney/app/src/main/AndroidManifest.xml:80:13-87
+93            android:screenOrientation="portrait"
+93-->/Volumes/Char/Documents/Android/AndroidStudioProjects/MobileAppThomasianJourney/app/src/main/AndroidManifest.xml:81:13-49
+94            android:theme="@style/Theme.AppCompat.Dark.NoActionBar.FullScreen" />
+94-->/Volumes/Char/Documents/Android/AndroidStudioProjects/MobileAppThomasianJourney/app/src/main/AndroidManifest.xml:82:13-79
+95        <activity
+95-->/Volumes/Char/Documents/Android/AndroidStudioProjects/MobileAppThomasianJourney/app/src/main/AndroidManifest.xml:83:9-86:82
+96            android:name="mobile.thomasianJourney.main.register.RegisterSuccess"
+96-->/Volumes/Char/Documents/Android/AndroidStudioProjects/MobileAppThomasianJourney/app/src/main/AndroidManifest.xml:84:13-81
+97            android:screenOrientation="portrait"
+97-->/Volumes/Char/Documents/Android/AndroidStudioProjects/MobileAppThomasianJourney/app/src/main/AndroidManifest.xml:85:13-49
+98            android:theme="@style/Theme.AppCompat.Dark.NoActionBar.FullScreen" />
+98-->/Volumes/Char/Documents/Android/AndroidStudioProjects/MobileAppThomasianJourney/app/src/main/AndroidManifest.xml:86:13-79
+99        <activity
+99-->/Volumes/Char/Documents/Android/AndroidStudioProjects/MobileAppThomasianJourney/app/src/main/AndroidManifest.xml:87:9-92:47
+100            android:name="mobile.thomasianJourney.main.Portfolio"
+100-->/Volumes/Char/Documents/Android/AndroidStudioProjects/MobileAppThomasianJourney/app/src/main/AndroidManifest.xml:88:13-66
+101            android:label="View Portfolio"
+101-->/Volumes/Char/Documents/Android/AndroidStudioProjects/MobileAppThomasianJourney/app/src/main/AndroidManifest.xml:89:13-43
+102            android:parentActivityName="mobile.thomasianJourney.main.MenuPortfolio"
+102-->/Volumes/Char/Documents/Android/AndroidStudioProjects/MobileAppThomasianJourney/app/src/main/AndroidManifest.xml:90:13-84
+103            android:screenOrientation="portrait"
+103-->/Volumes/Char/Documents/Android/AndroidStudioProjects/MobileAppThomasianJourney/app/src/main/AndroidManifest.xml:91:13-49
+104            android:theme="@style/AppTheme" />
+104-->/Volumes/Char/Documents/Android/AndroidStudioProjects/MobileAppThomasianJourney/app/src/main/AndroidManifest.xml:92:13-44
+105        <activity
+105-->/Volumes/Char/Documents/Android/AndroidStudioProjects/MobileAppThomasianJourney/app/src/main/AndroidManifest.xml:93:9-98:47
+106            android:name="mobile.thomasianJourney.main.EventDetails"
+106-->/Volumes/Char/Documents/Android/AndroidStudioProjects/MobileAppThomasianJourney/app/src/main/AndroidManifest.xml:94:13-69
+107            android:label="Event Details"
+107-->/Volumes/Char/Documents/Android/AndroidStudioProjects/MobileAppThomasianJourney/app/src/main/AndroidManifest.xml:95:13-42
+108            android:parentActivityName="mobile.thomasianJourney.main.MainActivity"
+108-->/Volumes/Char/Documents/Android/AndroidStudioProjects/MobileAppThomasianJourney/app/src/main/AndroidManifest.xml:96:13-83
+109            android:screenOrientation="portrait"
+109-->/Volumes/Char/Documents/Android/AndroidStudioProjects/MobileAppThomasianJourney/app/src/main/AndroidManifest.xml:97:13-49
+110            android:theme="@style/AppTheme" />
+110-->/Volumes/Char/Documents/Android/AndroidStudioProjects/MobileAppThomasianJourney/app/src/main/AndroidManifest.xml:98:13-44
+111        <activity
+111-->/Volumes/Char/Documents/Android/AndroidStudioProjects/MobileAppThomasianJourney/app/src/main/AndroidManifest.xml:99:9-108:20
+112            android:name="mobile.thomasianJourney.main.ScanSuccess"
+112-->/Volumes/Char/Documents/Android/AndroidStudioProjects/MobileAppThomasianJourney/app/src/main/AndroidManifest.xml:100:13-68
+113            android:screenOrientation="portrait"
+113-->/Volumes/Char/Documents/Android/AndroidStudioProjects/MobileAppThomasianJourney/app/src/main/AndroidManifest.xml:101:13-49
+114            android:theme="@style/Theme.AppCompat.Dark.NoActionBar.FullScreen" >
+114-->/Volumes/Char/Documents/Android/AndroidStudioProjects/MobileAppThomasianJourney/app/src/main/AndroidManifest.xml:102:13-79
+115            <intent-filter>
+115-->/Volumes/Char/Documents/Android/AndroidStudioProjects/MobileAppThomasianJourney/app/src/main/AndroidManifest.xml:103:13-107:29
+116                <action android:name="android.intent.action.RUN" />
+116-->/Volumes/Char/Documents/Android/AndroidStudioProjects/MobileAppThomasianJourney/app/src/main/AndroidManifest.xml:104:17-68
+116-->/Volumes/Char/Documents/Android/AndroidStudioProjects/MobileAppThomasianJourney/app/src/main/AndroidManifest.xml:104:25-65
+117
+118                <category android:name="android.intent.category.DEFAULT" />
+118-->/Volumes/Char/Documents/Android/AndroidStudioProjects/MobileAppThomasianJourney/app/src/main/AndroidManifest.xml:106:17-76
+118-->/Volumes/Char/Documents/Android/AndroidStudioProjects/MobileAppThomasianJourney/app/src/main/AndroidManifest.xml:106:27-73
+119            </intent-filter>
+120        </activity>
+121        <activity
+121-->/Volumes/Char/Documents/Android/AndroidStudioProjects/MobileAppThomasianJourney/app/src/main/AndroidManifest.xml:109:9-112:82
+122            android:name="mobile.thomasianJourney.main.VerifyLoginCred"
+122-->/Volumes/Char/Documents/Android/AndroidStudioProjects/MobileAppThomasianJourney/app/src/main/AndroidManifest.xml:110:13-72
+123            android:screenOrientation="portrait"
+123-->/Volumes/Char/Documents/Android/AndroidStudioProjects/MobileAppThomasianJourney/app/src/main/AndroidManifest.xml:111:13-49
+124            android:theme="@style/Theme.AppCompat.Dark.NoActionBar.FullScreen" />
+124-->/Volumes/Char/Documents/Android/AndroidStudioProjects/MobileAppThomasianJourney/app/src/main/AndroidManifest.xml:112:13-79
+125        <activity
+125-->/Volumes/Char/Documents/Android/AndroidStudioProjects/MobileAppThomasianJourney/app/src/main/AndroidManifest.xml:113:9-122:20
+126            android:name="mobile.thomasianJourney.main.VerLoginCredSuc"
+126-->/Volumes/Char/Documents/Android/AndroidStudioProjects/MobileAppThomasianJourney/app/src/main/AndroidManifest.xml:114:13-72
+127            android:screenOrientation="portrait"
+127-->/Volumes/Char/Documents/Android/AndroidStudioProjects/MobileAppThomasianJourney/app/src/main/AndroidManifest.xml:115:13-49
+128            android:theme="@style/Theme.AppCompat.Dark.NoActionBar.FullScreen" >
+128-->/Volumes/Char/Documents/Android/AndroidStudioProjects/MobileAppThomasianJourney/app/src/main/AndroidManifest.xml:116:13-79
+129            <intent-filter>
+129-->/Volumes/Char/Documents/Android/AndroidStudioProjects/MobileAppThomasianJourney/app/src/main/AndroidManifest.xml:103:13-107:29
+130                <action android:name="android.intent.action.RUN" />
+130-->/Volumes/Char/Documents/Android/AndroidStudioProjects/MobileAppThomasianJourney/app/src/main/AndroidManifest.xml:104:17-68
+130-->/Volumes/Char/Documents/Android/AndroidStudioProjects/MobileAppThomasianJourney/app/src/main/AndroidManifest.xml:104:25-65
+131
+132                <category android:name="android.intent.category.DEFAULT" />
+132-->/Volumes/Char/Documents/Android/AndroidStudioProjects/MobileAppThomasianJourney/app/src/main/AndroidManifest.xml:106:17-76
+132-->/Volumes/Char/Documents/Android/AndroidStudioProjects/MobileAppThomasianJourney/app/src/main/AndroidManifest.xml:106:27-73
+133            </intent-filter>
+134        </activity>
+135        <activity
+135-->/Volumes/Char/Documents/Android/AndroidStudioProjects/MobileAppThomasianJourney/app/src/main/AndroidManifest.xml:123:9-125:52
+136            android:name="mobile.thomasianJourney.main.Help"
+136-->/Volumes/Char/Documents/Android/AndroidStudioProjects/MobileAppThomasianJourney/app/src/main/AndroidManifest.xml:124:13-61
+137            android:screenOrientation="portrait" />
+137-->/Volumes/Char/Documents/Android/AndroidStudioProjects/MobileAppThomasianJourney/app/src/main/AndroidManifest.xml:125:13-49
+138        <activity android:name="mobile.thomasianJourney.main.CaptureActivityPortrait" >
+138-->/Volumes/Char/Documents/Android/AndroidStudioProjects/MobileAppThomasianJourney/app/src/main/AndroidManifest.xml:126:9-132:20
+138-->/Volumes/Char/Documents/Android/AndroidStudioProjects/MobileAppThomasianJourney/app/src/main/AndroidManifest.xml:126:19-86
+139            <intent-filter>
+139-->/Volumes/Char/Documents/Android/AndroidStudioProjects/MobileAppThomasianJourney/app/src/main/AndroidManifest.xml:103:13-107:29
+140                <action android:name="android.intent.action.RUN" />
+140-->/Volumes/Char/Documents/Android/AndroidStudioProjects/MobileAppThomasianJourney/app/src/main/AndroidManifest.xml:104:17-68
+140-->/Volumes/Char/Documents/Android/AndroidStudioProjects/MobileAppThomasianJourney/app/src/main/AndroidManifest.xml:104:25-65
+141
+142                <category android:name="android.intent.category.DEFAULT" />
+142-->/Volumes/Char/Documents/Android/AndroidStudioProjects/MobileAppThomasianJourney/app/src/main/AndroidManifest.xml:106:17-76
+142-->/Volumes/Char/Documents/Android/AndroidStudioProjects/MobileAppThomasianJourney/app/src/main/AndroidManifest.xml:106:27-73
+143            </intent-filter>
+144        </activity>
+145
+146        <service android:name="mobile.thomasianJourney.main.FirebaseInstanceIDService" >
+146-->/Volumes/Char/Documents/Android/AndroidStudioProjects/MobileAppThomasianJourney/app/src/main/AndroidManifest.xml:134:9-138:19
+146-->/Volumes/Char/Documents/Android/AndroidStudioProjects/MobileAppThomasianJourney/app/src/main/AndroidManifest.xml:134:18-87
+147            <intent-filter>
+147-->/Volumes/Char/Documents/Android/AndroidStudioProjects/MobileAppThomasianJourney/app/src/main/AndroidManifest.xml:135:13-137:29
+148                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+148-->/Volumes/Char/Documents/Android/AndroidStudioProjects/MobileAppThomasianJourney/app/src/main/AndroidManifest.xml:136:17-80
+148-->/Volumes/Char/Documents/Android/AndroidStudioProjects/MobileAppThomasianJourney/app/src/main/AndroidManifest.xml:136:25-77
+149            </intent-filter>
+150        </service>
+151        <service android:name="mobile.thomasianJourney.main.FirebaseMessagingService" >
+151-->/Volumes/Char/Documents/Android/AndroidStudioProjects/MobileAppThomasianJourney/app/src/main/AndroidManifest.xml:139:9-143:19
+151-->/Volumes/Char/Documents/Android/AndroidStudioProjects/MobileAppThomasianJourney/app/src/main/AndroidManifest.xml:139:18-86
+152            <intent-filter>
+152-->/Volumes/Char/Documents/Android/AndroidStudioProjects/MobileAppThomasianJourney/app/src/main/AndroidManifest.xml:140:13-142:29
+153                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+153-->/Volumes/Char/Documents/Android/AndroidStudioProjects/MobileAppThomasianJourney/app/src/main/AndroidManifest.xml:141:17-78
+153-->/Volumes/Char/Documents/Android/AndroidStudioProjects/MobileAppThomasianJourney/app/src/main/AndroidManifest.xml:141:25-75
+154            </intent-filter>
+155        </service>
+156
+157        <activity
+157-->[com.journeyapps:zxing-android-embedded:3.5.0] /Volumes/Char/Documents/.gradle/caches/transforms-2/files-2.1/48352cb204ab607d39753afa31f2450e/zxing-android-embedded-3.5.0/AndroidManifest.xml:46:9-52:63
+158            android:name="com.journeyapps.barcodescanner.CaptureActivity"
+158-->[com.journeyapps:zxing-android-embedded:3.5.0] /Volumes/Char/Documents/.gradle/caches/transforms-2/files-2.1/48352cb204ab607d39753afa31f2450e/zxing-android-embedded-3.5.0/AndroidManifest.xml:47:13-74
+159            android:clearTaskOnLaunch="true"
+159-->[com.journeyapps:zxing-android-embedded:3.5.0] /Volumes/Char/Documents/.gradle/caches/transforms-2/files-2.1/48352cb204ab607d39753afa31f2450e/zxing-android-embedded-3.5.0/AndroidManifest.xml:48:13-45
+160            android:screenOrientation="sensorLandscape"
+160-->[com.journeyapps:zxing-android-embedded:3.5.0] /Volumes/Char/Documents/.gradle/caches/transforms-2/files-2.1/48352cb204ab607d39753afa31f2450e/zxing-android-embedded-3.5.0/AndroidManifest.xml:49:13-56
+161            android:stateNotNeeded="true"
+161-->[com.journeyapps:zxing-android-embedded:3.5.0] /Volumes/Char/Documents/.gradle/caches/transforms-2/files-2.1/48352cb204ab607d39753afa31f2450e/zxing-android-embedded-3.5.0/AndroidManifest.xml:50:13-42
+162            android:theme="@style/zxing_CaptureTheme"
+162-->[com.journeyapps:zxing-android-embedded:3.5.0] /Volumes/Char/Documents/.gradle/caches/transforms-2/files-2.1/48352cb204ab607d39753afa31f2450e/zxing-android-embedded-3.5.0/AndroidManifest.xml:51:13-54
+163            android:windowSoftInputMode="stateAlwaysHidden" />
+163-->[com.journeyapps:zxing-android-embedded:3.5.0] /Volumes/Char/Documents/.gradle/caches/transforms-2/files-2.1/48352cb204ab607d39753afa31f2450e/zxing-android-embedded-3.5.0/AndroidManifest.xml:52:13-60
+164        <!--
+165             FirebaseMessagingService performs security checks at runtime,
+166             no need for explicit permissions despite exported="true"
+167        -->
+168        <service
+168-->[com.google.firebase:firebase-messaging:17.3.4] /Volumes/Char/Documents/.gradle/caches/transforms-2/files-2.1/ebc4372f62b57671d55b0baff2267055/firebase-messaging-17.3.4/AndroidManifest.xml:28:9-34:19
+169            android:name="com.google.firebase.messaging.FirebaseMessagingService"
+169-->[com.google.firebase:firebase-messaging:17.3.4] /Volumes/Char/Documents/.gradle/caches/transforms-2/files-2.1/ebc4372f62b57671d55b0baff2267055/firebase-messaging-17.3.4/AndroidManifest.xml:29:13-82
+170            android:exported="true" >
+170-->[com.google.firebase:firebase-messaging:17.3.4] /Volumes/Char/Documents/.gradle/caches/transforms-2/files-2.1/ebc4372f62b57671d55b0baff2267055/firebase-messaging-17.3.4/AndroidManifest.xml:30:13-36
+171            <intent-filter android:priority="-500" >
+171-->/Volumes/Char/Documents/Android/AndroidStudioProjects/MobileAppThomasianJourney/app/src/main/AndroidManifest.xml:140:13-142:29
+172                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+172-->/Volumes/Char/Documents/Android/AndroidStudioProjects/MobileAppThomasianJourney/app/src/main/AndroidManifest.xml:141:17-78
+172-->/Volumes/Char/Documents/Android/AndroidStudioProjects/MobileAppThomasianJourney/app/src/main/AndroidManifest.xml:141:25-75
+173            </intent-filter>
+174        </service>
+175        <service
+175-->[com.google.firebase:firebase-iid:17.0.4] /Volumes/Char/Documents/.gradle/caches/transforms-2/files-2.1/0b5181561b042d70bd62a360fda3943c/firebase-iid-17.0.4/AndroidManifest.xml:29:9-35:19
+176            android:name="com.google.firebase.components.ComponentDiscoveryService"
+176-->[com.google.firebase:firebase-iid:17.0.4] /Volumes/Char/Documents/.gradle/caches/transforms-2/files-2.1/0b5181561b042d70bd62a360fda3943c/firebase-iid-17.0.4/AndroidManifest.xml:30:13-84
+177            android:exported="false" >
+177-->[com.google.firebase:firebase-iid:17.0.4] /Volumes/Char/Documents/.gradle/caches/transforms-2/files-2.1/0b5181561b042d70bd62a360fda3943c/firebase-iid-17.0.4/AndroidManifest.xml:31:13-37
+178            <meta-data
+178-->[com.google.firebase:firebase-iid:17.0.4] /Volumes/Char/Documents/.gradle/caches/transforms-2/files-2.1/0b5181561b042d70bd62a360fda3943c/firebase-iid-17.0.4/AndroidManifest.xml:32:13-34:85
+179                android:name="com.google.firebase.components:com.google.firebase.iid.Registrar"
+179-->[com.google.firebase:firebase-iid:17.0.4] /Volumes/Char/Documents/.gradle/caches/transforms-2/files-2.1/0b5181561b042d70bd62a360fda3943c/firebase-iid-17.0.4/AndroidManifest.xml:33:17-96
+180                android:value="com.google.firebase.components.ComponentRegistrar" />
+180-->[com.google.firebase:firebase-iid:17.0.4] /Volumes/Char/Documents/.gradle/caches/transforms-2/files-2.1/0b5181561b042d70bd62a360fda3943c/firebase-iid-17.0.4/AndroidManifest.xml:34:17-82
+181        </service>
+182
+183        <receiver
+183-->[com.google.firebase:firebase-iid:17.0.4] /Volumes/Char/Documents/.gradle/caches/transforms-2/files-2.1/0b5181561b042d70bd62a360fda3943c/firebase-iid-17.0.4/AndroidManifest.xml:37:9-44:20
+184            android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver"
+184-->[com.google.firebase:firebase-iid:17.0.4] /Volumes/Char/Documents/.gradle/caches/transforms-2/files-2.1/0b5181561b042d70bd62a360fda3943c/firebase-iid-17.0.4/AndroidManifest.xml:38:13-78
+185            android:exported="true"
+185-->[com.google.firebase:firebase-iid:17.0.4] /Volumes/Char/Documents/.gradle/caches/transforms-2/files-2.1/0b5181561b042d70bd62a360fda3943c/firebase-iid-17.0.4/AndroidManifest.xml:39:13-36
+186            android:permission="com.google.android.c2dm.permission.SEND" >
+186-->[com.google.firebase:firebase-iid:17.0.4] /Volumes/Char/Documents/.gradle/caches/transforms-2/files-2.1/0b5181561b042d70bd62a360fda3943c/firebase-iid-17.0.4/AndroidManifest.xml:40:13-73
+187            <intent-filter>
+187-->[com.google.firebase:firebase-iid:17.0.4] /Volumes/Char/Documents/.gradle/caches/transforms-2/files-2.1/0b5181561b042d70bd62a360fda3943c/firebase-iid-17.0.4/AndroidManifest.xml:41:13-43:29
+188                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+188-->[com.google.firebase:firebase-iid:17.0.4] /Volumes/Char/Documents/.gradle/caches/transforms-2/files-2.1/0b5181561b042d70bd62a360fda3943c/firebase-iid-17.0.4/AndroidManifest.xml:42:17-81
+188-->[com.google.firebase:firebase-iid:17.0.4] /Volumes/Char/Documents/.gradle/caches/transforms-2/files-2.1/0b5181561b042d70bd62a360fda3943c/firebase-iid-17.0.4/AndroidManifest.xml:42:25-78
+189            </intent-filter>
+190        </receiver>
+191        <!--
+192             FirebaseInstanceIdService performs security checks at runtime,
+193             no need for explicit permissions despite exported="true"
+194        -->
+195        <service
+195-->[com.google.firebase:firebase-iid:17.0.4] /Volumes/Char/Documents/.gradle/caches/transforms-2/files-2.1/0b5181561b042d70bd62a360fda3943c/firebase-iid-17.0.4/AndroidManifest.xml:50:9-56:19
+196            android:name="com.google.firebase.iid.FirebaseInstanceIdService"
+196-->[com.google.firebase:firebase-iid:17.0.4] /Volumes/Char/Documents/.gradle/caches/transforms-2/files-2.1/0b5181561b042d70bd62a360fda3943c/firebase-iid-17.0.4/AndroidManifest.xml:51:13-77
+197            android:exported="true" >
+197-->[com.google.firebase:firebase-iid:17.0.4] /Volumes/Char/Documents/.gradle/caches/transforms-2/files-2.1/0b5181561b042d70bd62a360fda3943c/firebase-iid-17.0.4/AndroidManifest.xml:52:13-36
+198            <intent-filter android:priority="-500" >
+198-->/Volumes/Char/Documents/Android/AndroidStudioProjects/MobileAppThomasianJourney/app/src/main/AndroidManifest.xml:135:13-137:29
+199                <action android:name="com.google.firebase.INSTANCE_ID_EVENT" />
+199-->/Volumes/Char/Documents/Android/AndroidStudioProjects/MobileAppThomasianJourney/app/src/main/AndroidManifest.xml:136:17-80
+199-->/Volumes/Char/Documents/Android/AndroidStudioProjects/MobileAppThomasianJourney/app/src/main/AndroidManifest.xml:136:25-77
+200            </intent-filter>
+201        </service>
+202
+203        <provider
+203-->[com.google.firebase:firebase-common:16.0.3] /Volumes/Char/Documents/.gradle/caches/transforms-2/files-2.1/770107fcb6f091ea6c2cb3619208b040/firebase-common-16.0.3/AndroidManifest.xml:10:9-14:39
+204            android:name="com.google.firebase.provider.FirebaseInitProvider"
+204-->[com.google.firebase:firebase-common:16.0.3] /Volumes/Char/Documents/.gradle/caches/transforms-2/files-2.1/770107fcb6f091ea6c2cb3619208b040/firebase-common-16.0.3/AndroidManifest.xml:11:13-77
+205            android:authorities="mobile.thomasianJourney.main.firebaseinitprovider"
+205-->[com.google.firebase:firebase-common:16.0.3] /Volumes/Char/Documents/.gradle/caches/transforms-2/files-2.1/770107fcb6f091ea6c2cb3619208b040/firebase-common-16.0.3/AndroidManifest.xml:12:13-72
+206            android:exported="false"
+206-->[com.google.firebase:firebase-common:16.0.3] /Volumes/Char/Documents/.gradle/caches/transforms-2/files-2.1/770107fcb6f091ea6c2cb3619208b040/firebase-common-16.0.3/AndroidManifest.xml:13:13-37
+207            android:initOrder="100" />
+207-->[com.google.firebase:firebase-common:16.0.3] /Volumes/Char/Documents/.gradle/caches/transforms-2/files-2.1/770107fcb6f091ea6c2cb3619208b040/firebase-common-16.0.3/AndroidManifest.xml:14:13-36
+208
+209        <activity
+209-->[com.google.android.gms:play-services-base:16.0.1] /Volumes/Char/Documents/.gradle/caches/transforms-2/files-2.1/e3099342a38a00991a155aa8c41ed241/play-services-base-16.0.1/AndroidManifest.xml:23:9-26:75
+210            android:name="com.google.android.gms.common.api.GoogleApiActivity"
+210-->[com.google.android.gms:play-services-base:16.0.1] /Volumes/Char/Documents/.gradle/caches/transforms-2/files-2.1/e3099342a38a00991a155aa8c41ed241/play-services-base-16.0.1/AndroidManifest.xml:24:13-79
+211            android:exported="false"
+211-->[com.google.android.gms:play-services-base:16.0.1] /Volumes/Char/Documents/.gradle/caches/transforms-2/files-2.1/e3099342a38a00991a155aa8c41ed241/play-services-base-16.0.1/AndroidManifest.xml:25:13-37
+212            android:theme="@android:style/Theme.Translucent.NoTitleBar" />
+212-->[com.google.android.gms:play-services-base:16.0.1] /Volumes/Char/Documents/.gradle/caches/transforms-2/files-2.1/e3099342a38a00991a155aa8c41ed241/play-services-base-16.0.1/AndroidManifest.xml:26:13-72
+213
+214        <meta-data
+214-->[com.google.android.gms:play-services-basement:16.0.1] /Volumes/Char/Documents/.gradle/caches/transforms-2/files-2.1/1eaa9a47167c8fdb5f61986cf594d174/play-services-basement-16.0.1/AndroidManifest.xml:23:9-25:69
+215            android:name="com.google.android.gms.version"
+215-->[com.google.android.gms:play-services-basement:16.0.1] /Volumes/Char/Documents/.gradle/caches/transforms-2/files-2.1/1eaa9a47167c8fdb5f61986cf594d174/play-services-basement-16.0.1/AndroidManifest.xml:24:13-58
+216            android:value="@integer/google_play_services_version" />
+216-->[com.google.android.gms:play-services-basement:16.0.1] /Volumes/Char/Documents/.gradle/caches/transforms-2/files-2.1/1eaa9a47167c8fdb5f61986cf594d174/play-services-basement-16.0.1/AndroidManifest.xml:25:13-66
+217        <meta-data
+217-->[com.android.support:support-v4:26.1.0] /Volumes/Char/Documents/.gradle/caches/transforms-2/files-2.1/4392216f94db0401d34995ab24aa09c7/support-v4-26.1.0/AndroidManifest.xml:26:9-28:38
+218            android:name="android.support.VERSION"
+218-->[com.android.support:support-v4:26.1.0] /Volumes/Char/Documents/.gradle/caches/transforms-2/files-2.1/4392216f94db0401d34995ab24aa09c7/support-v4-26.1.0/AndroidManifest.xml:27:13-51
+219            android:value="26.1.0" />
+219-->[com.android.support:support-v4:26.1.0] /Volumes/Char/Documents/.gradle/caches/transforms-2/files-2.1/4392216f94db0401d34995ab24aa09c7/support-v4-26.1.0/AndroidManifest.xml:28:13-35
+220    </application>
+221
+222</manifest>

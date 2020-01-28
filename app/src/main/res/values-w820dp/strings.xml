@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="registerURL">https://thomasianjourney.website/register/registerUser</string>
+    <string name="registerCheckCodeURL">https://thomasianjourney.website/register/checkCode</string>
+    <string name="studentDetails">https://thomasianjourney.website/register/studentdetails</string>
+
+</resources>

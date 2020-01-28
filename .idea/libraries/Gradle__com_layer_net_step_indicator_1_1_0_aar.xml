@@ -1,0 +1,14 @@
+<component name="libraryTable">
+  <library name="Gradle: com.layer-net:step-indicator:1.1.0@aar">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../../.gradle/caches/transforms-2/files-2.1/1580cd6963a74b47cde518dc05a7f80b/step-indicator-1.1.0/jars/classes.jar!/" />
+      <root url="file://$PROJECT_DIR$/../../../.gradle/caches/transforms-2/files-2.1/1580cd6963a74b47cde518dc05a7f80b/step-indicator-1.1.0/res" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$PROJECT_DIR$/../../../.gradle/caches/modules-2/files-2.1/com.layer-net/step-indicator/1.1.0/866e6db87f6f6a21b79b6b536ab331b6984c0610/step-indicator-1.1.0-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/../../../.gradle/caches/modules-2/files-2.1/com.layer-net/step-indicator/1.1.0/c4fb09ab11d4c88d328dad5b4513b8785de10439/step-indicator-1.1.0-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

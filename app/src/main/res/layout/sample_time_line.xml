@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:id="@+id/port1">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="200dp"
+        android:orientation="vertical"
+        android:layout_marginLeft="10dp">
+
+        <View
+            android:id="@+id/line_indicator_top"
+            android:layout_width="5dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="13dp"
+            android:layout_marginLeft="13dp"
+            android:background="@drawable/state_box" />
+
+        <View
+            android:id="@+id/dot_indicator"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_below="@id/line_indicator_top"
+            android:layout_marginStart="1dp"
+            android:layout_marginLeft="1dp"
+            android:background="@drawable/state_dot" />
+
+        <View
+            android:id="@+id/line_indicator_bottom"
+            android:layout_width="5dp"
+            android:layout_height="160dp"
+            android:layout_below="@id/dot_indicator"
+            android:layout_marginStart="13dp"
+            android:layout_marginLeft="13dp"
+            android:background="@drawable/state_box" />
+
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="35dp"
+            android:layout_marginLeft="35dp"
+            android:layout_marginTop="50dp"
+            android:background="@drawable/sample_item_bg"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <TextView
+                android:id="@+id/tv_event_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppinsmedium"
+                android:text="This is a sample Event Title"
+                android:textSize="15dp"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
+
+            <TextView
+                android:id="@+id/tv_event_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppinsmedium"
+                android:text="This is Event Date"
+                android:textSize="15dp"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" />
+
+            <TextView
+                android:id="@+id/tv_event_desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/poppinsregular"
+                android:text="this is a sample sub title or content."
+                android:textSize="15dp"
+                android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium" />
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+</LinearLayout>
+
+
+
+

@@ -1,0 +1,4 @@
+#Thu May 16 14:43:59 SGT 2019
+base.0=C\:\\Users\\cedri_000\\Desktop\\MobileAppThomasianJourney\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\7
+path.0=classes.dex
+renamed.0=classes.dex

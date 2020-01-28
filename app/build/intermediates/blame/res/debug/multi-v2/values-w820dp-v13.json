@@ -1,0 +1,26 @@
+{
+    "logs": [
+        {
+            "outputFile": "/Volumes/Char/Documents/Android/AndroidStudioProjects/MobileAppThomasianJourney/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-w820dp-v13/values-w820dp-v13.xml",
+            "map": [
+                {
+                    "source": "/Volumes/Char/Documents/Android/AndroidStudioProjects/MobileAppThomasianJourney/app/src/main/res/values-w820dp/strings.xml",
+                    "from": {
+                        "startLines": "3,2,4",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "153,57,255",
+                        "endColumns": "100,94,99",
+                        "endOffsets": "249,147,350"
+                    },
+                    "to": {
+                        "startLines": "2,3,4",
+                        "startColumns": "4,4,4",
+                        "startOffsets": "55,156,251",
+                        "endColumns": "100,94,99",
+                        "endOffsets": "151,246,346"
+                    }
+                }
+            ]
+        }
+    ]
+}

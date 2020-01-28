@@ -1,0 +1,53 @@
+<resources>
+    <string name="app_name">Thomasian Journey v3</string>
+    <string name="tab_text_1">EVENTS</string>
+    <string name="tab_text_2">UPCOMING</string>
+    <string name="tab_text_3">ATTENDED</string>
+
+    <string name="registeraccount">
+        <li>In registering for your account, you must enter your ust.edu.ph email account and mobile number (login credentials). After entering your login credentials, press the Register button.\n</li>
+        <li>You will then be redirected on the verification page, where you must enter the verification sent to you in your ust.edu.ph email account then, press the Verify button.\n</li>
+        <li>If you haven’t received your verification code in your email, press the “Didn’t get an email?” link to have another verification code.\n</li>
+        <li>After successfully verifying your account, press Continue.</li>
+    </string>
+
+    <string name="view_events">
+        <li>In the home page, press the View Events button.\n</li>
+        <li>The view events page consists of (3) three tabs namely, Events, Upcoming, and Attended.\n</li>
+        <p>i. For the events tab, it will show you both the upcoming and attended events.\n</p>
+        <p>ii. For the upcoming tab, it will show you only the upcoming events that you may participate in to.\n</p>
+        <p>iii. For the attended tab, it will show you the past events that you’ve attended so far.\n</p>
+        <li>In viewing the event details, press the specific event you want to know more.\n</li>
+        <li>It will show you the title of the event, date and time, venue, description of the event and the point you will receive.</li>
+    </string>
+
+    <string name="view_portfolio">
+        <li>In the home page, press the View Portfolio button.\n</li>
+        <li>You will be redirected to the View Portfolio page where you can see the events you’ve attended, sorted by your year level.</li>
+    </string>
+
+    <string name="view_scanqr">
+        <li>Press the View Events button in the home page.\n</li>
+        <li>Press the event you wanted to attend to.\n</li>
+        <li>In the event details page, press the Attend Event button.\n</li>
+        <li>Wait for your login credentials to be verified.\n</li>
+        <li>Once verified, you can already scan the QR code.\n</li>
+        <li>Point your smartphone’s camera directly to the QR code and press the Scan QR code button.\n</li>
+        <li>If your scanned QR is unsuccessful, try to scan it again.\n</li>
+        <li>After successfully scanning, you can press the Go Back to Home button or View Attended Events button.\n</li>
+    </string>
+
+    <string name="view_help">
+        <li>In case you need help or guide for this application, just press the question mark logo on the upper right of the page.</li>
+    </string>
+
+    <string name="change_login_credentials">
+        <li>To change or reset the login credentials, kindly inform your Department Chair’s to be able to change it.</li>
+    </string>
+    <string name="registerURL">https://thomasianjourney.website/register/registerUser</string>
+    <string name="registerCheckCodeURL">https://thomasianjourney.website/register/checkCode</string>
+    <string name="studentDetails">https://thomasianjourney.website/register/studentdetails</string>
+    <string name="title_activity_gps">GPSActivity</string>
+</resources>
+
+
