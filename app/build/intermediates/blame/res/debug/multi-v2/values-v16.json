@@ -4,7 +4,7 @@
             "outputFile": "/Volumes/Char/Documents/Android/AndroidStudioProjects/MobileAppThomasianJourney/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v16/values-v16.xml",
             "map": [
                 {
-                    "source": "/Volumes/Char/Documents/.gradle/caches/transforms-2/files-2.1/15035ed350d43f07aebe9cead70486b2/appcompat-v7-28.0.0/res/values-v16/values-v16.xml",
+                    "source": "/Volumes/Char/Documents/.gradle/caches/transforms-2/files-2.1/3fca11ee8a5af81e897352e405f8c9f0/appcompat-v7-28.0.0/res/values-v16/values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -23,7 +23,7 @@
                     }
                 },
                 {
-                    "source": "/Volumes/Char/Documents/.gradle/caches/transforms-2/files-2.1/e80327cc5b6d14150f74585b4aa35cdb/support-compat-28.0.0/res/values-v16/values-v16.xml",
+                    "source": "/Volumes/Char/Documents/.gradle/caches/transforms-2/files-2.1/976475a846828c035308218b5ee63574/support-compat-28.0.0/res/values-v16/values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

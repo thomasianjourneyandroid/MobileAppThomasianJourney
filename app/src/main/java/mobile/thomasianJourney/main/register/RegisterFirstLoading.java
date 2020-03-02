@@ -107,7 +107,7 @@ public class RegisterFirstLoading extends AppCompatActivity {
 							String mobileNumber = dataObject.get("studregmobileNum").getAsString();
 							int studentsId = dataObject.get("studregId").getAsInt();
 
-							Log.d("RegisterFirstLoading", "Checking of Data + " + emailAddress + " " + mobileNumber + " " + studentsId);
+							//Log.d("RegisterFirstLoading", "Checking of Data + " + emailAddress + " " + mobileNumber + " " + studentsId);
 
 							Intent intent = new Intent(RegisterFirstLoading.this, RegisterSecond.class);
 							intent.putExtra(IntentExtrasAddresses.INTENT_EXTRA_EMAIL_ADDRESS, emailAddress);

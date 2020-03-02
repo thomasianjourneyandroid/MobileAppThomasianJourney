@@ -4,7 +4,7 @@
             "outputFile": "/Volumes/Char/Documents/Android/AndroidStudioProjects/MobileAppThomasianJourney/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-id/values-id.xml",
             "map": [
                 {
-                    "source": "/Volumes/Char/Documents/.gradle/caches/transforms-2/files-2.1/48352cb204ab607d39753afa31f2450e/zxing-android-embedded-3.5.0/res/values-id/values-id.xml",
+                    "source": "/Volumes/Char/Documents/.gradle/caches/transforms-2/files-2.1/51de5ff100d3ef6fe3d2bb0ea20e810b/zxing-android-embedded-3.5.0/res/values-id/values-id.xml",
                     "from": {
                         "startLines": "2,3,4,5",
                         "startColumns": "4,4,4,4",

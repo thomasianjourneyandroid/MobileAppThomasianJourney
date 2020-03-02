@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.os.Handler;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
@@ -40,6 +41,8 @@ public class RegisterSecond extends AppCompatActivity {
 
 	private boolean isReadyToResend;
 	private long emailRequestStart;
+	private long emailRequestEnd;
+	private long emailRequestDuration;
 
 	@Override
 	protected void onCreate(final Bundle savedInstanceState) {
@@ -49,7 +52,8 @@ public class RegisterSecond extends AppCompatActivity {
 		initializeViews();
 
 		isReadyToResend = true;
-		emailRequestStart = 300000;
+		emailRequestStart = System.nanoTime();
+        //Log.d("Time Check", "Email Request Start " + emailRequestStart);
 
 		Intent intent = getIntent();
 
@@ -95,6 +99,17 @@ public class RegisterSecond extends AppCompatActivity {
 				}
 			});
 		}
+
+		Handler handler = new Handler();
+		handler.postDelayed(new Runnable() {
+			@Override
+			public void run() {
+				isReadyToResend = true;
+                emailRequestStart = System.nanoTime();
+				//Log.d("Time Check", "One minute has passed" + isReadyToResend);
+			}
+		//}, 300000);
+		}, 300000);
 	}
 
 	private void initializeViews() {
@@ -151,20 +166,18 @@ public class RegisterSecond extends AppCompatActivity {
 
 		mDialogResend.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
 
+		emailRequestEnd = System.nanoTime();
+        //Log.d("Time Check", "Email Request End: " + emailRequestEnd);
+
+		emailRequestDuration = (emailRequestEnd - emailRequestStart)/1000000000;
+		//Log.d("Time Check", "Email Request Duration: " + emailRequestDuration);
+
 		try {
-			if (isReadyToResend && 300000 - emailRequestStart == 0) {
+			if (isReadyToResend == true || emailRequestDuration >= 300) {
 				isReadyToResend = false;
 
-				Handler handler = new Handler();
-
-				handler.postDelayed(new Runnable() {
-					@Override
-					public void run() {
-						isReadyToResend = true;
-					}
-				}, 300000);
-
-				emailRequestStart = System.nanoTime();
+				//emailRequestStart = System.nanoTime();
+				//Log.d("RegisterSecond", "System.nanoTime Example here: " + emailRequestStart);
 
 				mDialogResend.show();
 			} else {

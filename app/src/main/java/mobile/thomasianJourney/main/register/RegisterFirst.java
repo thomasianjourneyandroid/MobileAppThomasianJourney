@@ -57,14 +57,24 @@ public class RegisterFirst extends AppCompatActivity {
 				String email = registerFirst_emailAddress.getText().toString();
 				String mobile = registerFirst_mobileNumber.getText().toString();
 
-				if (!email.isEmpty() && !mobile.isEmpty()) {
+				if (email.isEmpty() && mobile.isEmpty()) {
+					Toast.makeText(RegisterFirst.this, "Email and Mobile number cannot be empty ", Toast.LENGTH_SHORT).show();
+				}
+
+				else if (!email.contains("@ust.edu.ph")) {
+					Toast.makeText(RegisterFirst.this, "Please make sure you have typed a valid @ust.edu.ph email.", Toast.LENGTH_SHORT).show();
+				}
+
+                else if (mobile.length() != 11) {
+                    Toast.makeText(RegisterFirst.this, "Please make sure you have typed a valid mobile number.", Toast.LENGTH_SHORT).show();
+                }
+
+				else {
 					Intent intent = new Intent(RegisterFirst.this, RegisterFirstLoading.class);
 					intent.putExtra(IntentExtrasAddresses.INTENT_EXTRA_EMAIL_ADDRESS, email);
 					intent.putExtra(IntentExtrasAddresses.INTENT_EXTRA_MOBILE_NUMBER, mobile);
 					startActivity(intent);
 					finish();
-				} else {
-					Toast.makeText(RegisterFirst.this, "Email and Mobile number cannot be empty ", Toast.LENGTH_SHORT).show();
 				}
 			}
 		});
