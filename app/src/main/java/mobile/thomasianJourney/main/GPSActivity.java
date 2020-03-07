@@ -19,11 +19,13 @@ import android.support.design.widget.Snackbar;
 import android.support.v4.app.ActivityCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.Toast;
 
+import mobile.thomasianJourney.main.register.utils.IntentExtrasAddresses;
 import mobile.thomasianJourney.main.vieweventsfragments.R;
 
 public class GPSActivity extends AppCompatActivity {
@@ -79,7 +81,14 @@ public class GPSActivity extends AppCompatActivity {
                     onPause();
                     Intent intent2 = new Intent(GPSActivity.this, VerifyLoginCred.class);
                     String actID =  intent.getExtras().getString("activityId");
+                    //String yearlevel = intent.getStringExtra(IntentExtrasAddresses.INTENT_EXTRA_STUDENT_YEAR);
+                    //int yearlevel = intent.getExtras().getInt("studYear");
                     intent2.putExtra("activityId", actID);
+                    //intent2.putExtra(IntentExtrasAddresses.INTENT_EXTRA_STUDENT_YEAR, yearlevel);
+                    //intent2.putExtra("studYear", yearlevel);
+
+                    //Log.d("GPSActivityCheck", "Checking of Students ID and Activity ID: " + yearlevel + " " + actID);
+
                     startActivity(intent2);
                     finish();
 

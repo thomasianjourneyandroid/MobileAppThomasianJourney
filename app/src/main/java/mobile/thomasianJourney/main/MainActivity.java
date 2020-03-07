@@ -2,6 +2,7 @@ package mobile.thomasianJourney.main;
 
 import android.app.Dialog;
 import android.content.Context;
+import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.support.annotation.NonNull;
@@ -15,6 +16,7 @@ import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -68,7 +70,6 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
 
         // Create list view
         mTablayout = findViewById(R.id.tabs);
@@ -159,10 +160,14 @@ public class MainActivity extends AppCompatActivity {
 //            }
 //        });
 
+//        Intent intent = getIntent();
+//        int yearlevel = intent.getExtras().getInt("studYear");
+//        Intent intent2 = new Intent(this, EventDetails.class);
+//        intent2.putExtra("studYear", yearlevel);
+//        startActivity(intent);
+//        Log.d("MainActivityCheck", "Year Checking: " + yearlevel);
+
     }
-
-
-
 
     // list view adapter
 

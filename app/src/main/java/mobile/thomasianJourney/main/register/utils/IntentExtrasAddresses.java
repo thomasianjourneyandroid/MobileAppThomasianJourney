@@ -5,5 +5,5 @@ public class IntentExtrasAddresses {
 	public static final String INTENT_EXTRA_MOBILE_NUMBER = "mobileNumber";
 	public static final String INTENT_EXTRA_STUDENTS_ID = "studentsID";
 	public static final String INTENT_EXTRA_VERIFICATION_CODE = "verificationCode";
-
+    public static final String INTENT_EXTRA_STUDENT_YEAR = "studYear";
 }

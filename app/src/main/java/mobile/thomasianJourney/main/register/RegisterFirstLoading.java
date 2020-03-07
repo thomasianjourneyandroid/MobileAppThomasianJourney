@@ -99,7 +99,7 @@ public class RegisterFirstLoading extends AppCompatActivity {
 				if (jsonObject.has("data")) {
 
 					JsonObject dataObject = jsonObject.get("data").getAsJsonObject();
-					Log.d("RegisterFirstLoading", "Data exists" + dataObject);
+					//Log.d("RegisterFirstLoading", "Data exists" + dataObject);
 
 					if (dataObject != null) {
 						if (dataObject.has("studregEmail") && dataObject.has("studregmobileNum") && dataObject.has("studregId")) {

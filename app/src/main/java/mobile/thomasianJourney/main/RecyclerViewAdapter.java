@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.graphics.Color;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -34,7 +35,6 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
     public MyViewHolder onCreateViewHolder(@NonNull ViewGroup viewGroup, int i) {
         View v;
 
-
         v = LayoutInflater.from(mContext).inflate(R.layout.row, viewGroup, false);
         final MyViewHolder vHolder = new MyViewHolder(v);
         vHolder.item_contact.setOnClickListener(new View.OnClickListener() {
@@ -61,10 +61,6 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
 
             }
         });
-
-
-
-
 
         return vHolder;
     }

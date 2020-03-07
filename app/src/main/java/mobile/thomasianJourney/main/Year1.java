@@ -56,6 +56,7 @@ public class Year1 extends Fragment {
                              Bundle savedInstanceState) {
 
         Intent i = getActivity().getIntent();
+        Log.d("Portfolio Checking", "" + i);
         String yearLevel = i.getExtras().getString("yearLevel");
         String[] tabs = i.getExtras().getStringArray("emptytab"+yearLevel);
         Log.i("ok","tabs = "+tabs.toString());

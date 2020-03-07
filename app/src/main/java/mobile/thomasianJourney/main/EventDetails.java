@@ -13,6 +13,7 @@ import android.support.design.widget.Snackbar;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.text.TextUtils;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -34,6 +35,7 @@ import java.util.Arrays;
 import java.util.Calendar;
 import java.util.Date;
 
+import mobile.thomasianJourney.main.register.utils.IntentExtrasAddresses;
 import mobile.thomasianJourney.main.vieweventsfragments.R;
 import okhttp3.ConnectionSpec;
 import okhttp3.MultipartBody;
@@ -76,6 +78,7 @@ public class EventDetails extends AppCompatActivity {
 
         Intent i = getIntent();
         String id = i.getExtras().getString("activityId");
+        //CHECK PER COLLEGE
         String accountId = "1";
         okHttpHandler2.execute(eventUrl, id, accountId);
 
@@ -422,6 +425,7 @@ public class EventDetails extends AppCompatActivity {
                 JsonObject jsonObject = gson.fromJson(s, JsonObject.class);
                 if(jsonObject.has("data")){
                     JsonObject dataObject = jsonObject.get("data").getAsJsonObject();
+                    //Log.d("Event Details", "Data exists" + dataObject);
                     String activityName = dataObject.get("activityName").getAsString();
                     String eventVenue = dataObject.get("eventVenue").getAsString();
                     String eventDate = dataObject.get("eventDate").getAsString();
@@ -542,9 +546,15 @@ public class EventDetails extends AppCompatActivity {
                         snackbar.show();
                         Intent i = getIntent();
                         String id = i.getExtras().getString("activityId");
+                        //String yearlevel = i.getStringExtra(IntentExtrasAddresses.INTENT_EXTRA_STUDENT_YEAR);
+                        //int yearlevel = i.getExtras().getInt("studYear");
+
+                        //Log.d("EventDetailsCheck", "Checking of Students ID and Activity: " + yearlevel + " " + id);
 
                         Intent intent = new Intent(this, GPSActivity.class);
                         intent.putExtra("activityId", id);
+                        //intent.putExtra(IntentExtrasAddresses.INTENT_EXTRA_STUDENT_YEAR, yearlevel);
+                        //intent.putExtra("studYear", yearlevel);
                         startActivity(intent);
                         finish();
                     }

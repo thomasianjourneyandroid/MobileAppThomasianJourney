@@ -1,10 +1,13 @@
 package mobile.thomasianJourney.main;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 
 import com.airbnb.lottie.LottieAnimationView;
 import com.blogspot.atifsoftwares.animatoolib.Animatoo;
@@ -16,7 +19,7 @@ public class ScanSuccess extends AppCompatActivity {
     private Button vhome_btn;
     private Button vport_btn;
     private LottieAnimationView LottieScan;
-
+    TextView emailaddress;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,6 +33,11 @@ public class ScanSuccess extends AppCompatActivity {
         LottieScan.setVisibility(View.VISIBLE);
         LottieScan.setAnimation(R.raw.qr);
         LottieScan.playAnimation();
+
+        emailaddress = findViewById(R.id.lblemail);
+        SharedPreferences sharedPreferences = getSharedPreferences("mobile.thomasianJourney.main.register.USER_CREDENTIALS", Context.MODE_PRIVATE);
+        String email = sharedPreferences.getString("emailAddress", "");
+        emailaddress.setText(email + " account");
 
 //        vhome_btn = (Button) findViewById(R.id.vhome_btn);
 //        vhome_btn.setOnClickListener(new View.OnClickListener() {

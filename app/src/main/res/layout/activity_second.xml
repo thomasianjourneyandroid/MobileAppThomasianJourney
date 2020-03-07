@@ -50,13 +50,14 @@ android:background="#fcfcfc">
 
         <ImageView
             android:id="@+id/img_help"
-            android:clickable="true"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/ic_help"
             android:layout_gravity="right"
+            android:layout_marginTop="260dp"
             android:layout_marginRight="10dp"
-            android:layout_marginTop="260dp"/>
+            android:clickable="true"
+            android:onClick="HelpAnimate"
+            android:src="@drawable/ic_help" />
 
     </android.support.design.widget.CollapsingToolbarLayout>
 

@@ -1,4 +1,4 @@
-#Mon Mar 02 15:41:55 PST 2020
+#Sat Mar 07 23:46:32 PST 2020
 base.0=/Volumes/Char/Documents/Android/AndroidStudioProjects/MobileAppThomasianJourney/app/build/intermediates/dex/debug/out/classes.dex
 path.0=classes.dex
 renamed.0=classes.dex

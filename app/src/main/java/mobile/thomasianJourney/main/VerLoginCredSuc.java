@@ -1,8 +1,10 @@
 package mobile.thomasianJourney.main;
 
 import android.app.Activity;
+import android.content.Context;
 import android.content.Intent;
 import android.app.Dialog;
+import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.location.LocationListener;
@@ -12,6 +14,7 @@ import android.os.Build;
 import android.os.Bundle;
 import android.support.annotation.RequiresApi;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 
@@ -26,6 +29,7 @@ import com.google.zxing.integration.android.IntentResult;
 
 import java.util.Arrays;
 
+import mobile.thomasianJourney.main.register.utils.IntentExtrasAddresses;
 import mobile.thomasianJourney.main.vieweventsfragments.R;
 import okhttp3.ConnectionSpec;
 import okhttp3.MultipartBody;
@@ -42,7 +46,7 @@ public class VerLoginCredSuc extends AppCompatActivity {
         public String url = "https://thomasianjourney.website/Register/insertAttended";
     Dialog dialog_errorqr;
     Button okbtn;
-    TextView titleErrorQR, exErrorRQ;
+    TextView titleErrorQR, exErrorRQ, emailaddress;
     ImageView closeDialogErrorQR, imageErrorQR;
 
     @Override
@@ -60,6 +64,11 @@ public class VerLoginCredSuc extends AppCompatActivity {
 
         contscanbtn = (Button) findViewById(R.id.contscanbtn);
         final Activity activity = this;
+
+        emailaddress = findViewById(R.id.lblemail);
+        SharedPreferences sharedPreferences = getSharedPreferences("mobile.thomasianJourney.main.register.USER_CREDENTIALS", Context.MODE_PRIVATE);
+        String email = sharedPreferences.getString("emailAddress", "");
+        emailaddress.setText(email + " account");
 //        locationManager = (LocationManager) this.getSystemService(LOCATION_SERVICE);
 //        locationListener = new LocationListener() {
 //            @Override
@@ -130,14 +139,29 @@ public class VerLoginCredSuc extends AppCompatActivity {
                 String contents = data.getStringExtra("SCAN_RESULT");
                 String format = data.getStringExtra("SCAN_RESULT_FORMAT");
                 Intent intent = getIntent();
+                //Log.d("VerLoginCredSuc", "Checking of intent: " + intent);
+
+                SharedPreferences sharedPreferences = getSharedPreferences("mobile.thomasianJourney.main.register.USER_CREDENTIALS", Context.MODE_PRIVATE);
                 String id = intent.getExtras().getString("activityId");
+                int studentyear = sharedPreferences.getInt("studYear", -1);
+                int studentId = sharedPreferences.getInt("studentsID", -1);
+                //Log.d("VerLoginCredSuc", "Testing of Account ID: " + studentId);
 
                 String[]  info = contents.split(";");
 
 //                && info[1].equals("sana") && info[2].equals("hehe")
                 if(info[0].equals(id)){
-                    String accountId = "1";
-                    String yearLevel = "2";
+                    // ADDS TO DIFFERENT USER
+//                    String accountId = "1";
+//                    String yearLevel = "2";
+
+                    // ADDS TO SPECIFIC USER
+                    String accountId = studentId + "";
+                    //Log.d("VerLoginCredSuc", "Testing of Account ID: " + accountId);
+                    String yearLevel = studentyear + "";
+                    Log.d("VerLoginCredCheck", "Testing of Year Level and Activity ID:  " + yearLevel + " " + id);
+
+                    //String yearLevel = "1";
                     OkHttpHandler okHttpHandler = new OkHttpHandler();
                     okHttpHandler.execute(url, accountId ,id, yearLevel);
                     Intent i = new Intent(VerLoginCredSuc.this, ScanSuccess.class);
